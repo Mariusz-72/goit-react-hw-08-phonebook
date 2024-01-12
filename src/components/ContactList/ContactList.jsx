@@ -44,13 +44,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 
-import { getFilteredContacts } from './Redux/Contacts/contactsSelectors.js';
+import { getFilteredContacts } from '../../Redux/Contacts/contactsSelectors';
 
 
 import {
-  fetchAllContacts,
-  fetchDeleteContact,
-} from './Redux/Contacts/contactsOperations.js';
+  fetchContacts,
+  deleteContact,
+} from '../../Redux/Contacts/contactsOperations';
 
 import css from './ContactList.module.css';
 
@@ -63,14 +63,14 @@ const MyContactList = () => {
 
   useEffect(() => {
     setLoading(false);
-    dispatch(fetchAllContacts());
+    dispatch(fetchContacts());
 
     setLoadingContacts(false);
   }, [dispatch]);
 
   const handleRemoveContact = async contactId => {
     setLoading({ [contactId]: true });
-    await dispatch(fetchDeleteContact(contactId));
+    await dispatch(deleteContact(contactId));
     setLoading({ [contactId]: false });
   };
 

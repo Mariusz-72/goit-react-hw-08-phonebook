@@ -43,7 +43,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import * as api from '../../shared/API/contacts';
 
-export const fetchAllContacts = createAsyncThunk(
+export const fetchContacts = createAsyncThunk(
   'contacts/fetch-all',
   async (_, thunkAPI) => {
     try {
@@ -55,7 +55,7 @@ export const fetchAllContacts = createAsyncThunk(
   }
 );
 
-export const fetchAddContact = createAsyncThunk(
+export const addContact = createAsyncThunk(
   'contacts/add-contact',
   async (data, thunkAPI) => {
     try {
@@ -67,7 +67,7 @@ export const fetchAddContact = createAsyncThunk(
   }
 );
 
-export const fetchDeleteContact = createAsyncThunk(
+export const deleteContact = createAsyncThunk(
   'contacts/delete-contact',
   async (id, thunkAPI) => {
     try {

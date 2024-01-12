@@ -1,8 +1,8 @@
-import UseForm from 'shared/hooks/useForm';
+import UseForm from '../../shared/hooks/useForm';
 import initialState from './initialState';
-import FormField from 'shared/API/components/formField';
+import FormField from '../../shared/API/components/formField';
 import fields from './fields';
-import Button from 'shared/button/button';
+import Button from '../../shared/button/button';
 
 import css from './LoginForm.module.css';
 

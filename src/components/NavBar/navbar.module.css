@@ -1,14 +1,15 @@
 .navbar_wrap {
     display: flex;
     justify-content: center;
-    gap: 500px;
-    background-color: rgb(212, 245, 243);
+    gap: 450px;
+    background-color: rgb(198, 248, 118);
     border-bottom: 2px solid gray;
     padding: 10px;
 }
 
 .navbar_title {
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: bold;
     text-decoration: none;
     color: gray;
 }

@@ -13,10 +13,14 @@
 
 .register_link {
     font-size: 50px;
-    color: gray;
+    color: rgb(252, 45, 45);
     font-weight: bold;
     display: inline-flex;
     text-decoration: none;
     justify-content: center;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.46);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.46);
+    border: 1px solid black;
+    background-color: rgb(177, 223, 226);
+    border-radius: 8px;
+    padding: 8px;
 }

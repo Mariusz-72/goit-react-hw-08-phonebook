@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { current } from 'Redux/auth/auth-operations';
+import { current } from '../../Redux/auth/auth-operations';
 
 const AuthLayout = ({ children }) => {
     const dispatch = useDispatch();

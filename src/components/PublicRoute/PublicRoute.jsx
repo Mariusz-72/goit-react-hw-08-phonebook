@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import { isLogin, getToken } from './Redux/auth/auth-selector.js';
+import { isLogin, getToken } from '../../Redux/auth/auth-selector';
 
 const PublicRoute = () => {
     const isUserLogin = useSelector(isLogin);

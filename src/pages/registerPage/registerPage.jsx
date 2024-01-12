@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { signup } from 'Redux/auth/auth-operations';
-import RegisterForm from 'components/RegisterForm/registerForm';
+import { signup } from '../../Redux/auth/auth-operations';
+import RegisterForm from '../../components/RegisterForm/registerForm';
 import css from './registerPage.module.css';
 
 const RegisterPage = () => {

@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import { getUser } from 'Redux/auth/auth-selector';
-import { logout } from 'Redux/auth/auth-operations';
+import { getUser } from '../../Redux/auth/auth-selector';
+import { logout } from '../../Redux//auth/auth-operations';
 
 import { Link } from 'react-router-dom';
 
