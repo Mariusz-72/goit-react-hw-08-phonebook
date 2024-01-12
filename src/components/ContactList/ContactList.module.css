@@ -1,4 +1,4 @@
-.contacts_wrapper {
+/* .contacts_wrapper {
     display: flex;
     justify-items: center;
     
@@ -49,4 +49,45 @@
     font-weight: 600;
     box-shadow: 1px 2px 2px grey;
     border: 1px solid grey;
+}
+
+ */
+.contacts_wrapper {
+  display: grid;
+  justify-items: center;
+}
+
+.contact_items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: rgb(250, 92, 92);
+  width: 100px;
+  height: 20px;
+  border-radius: 7px;
+}
+
+.contactList__item {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactList__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contactList__number {
+  font-size: 18px;
 }
