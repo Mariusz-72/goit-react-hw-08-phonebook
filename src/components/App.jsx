@@ -1,13 +1,35 @@
 
-import MyContacts from './Contacts/MyContacts';
+// import MyContacts from './Contacts/MyContacts';
 
 
-const App = () => {
+// const App = () => {
+//   return (
+//     <div>
+//       <MyContacts />
+//     </div>
+//   );
+// };
+
+// export default App;
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { current } from './Redux/auth/auth-operations.js';
+
+import Navbar from './NavBar/Navbar';
+import UserRoutes from './userRoutes';
+
+export const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(current());
+  }, [dispatch]);
+
   return (
     <div>
-      <MyContacts />
+      <Navbar />
+      <UserRoutes />
     </div>
   );
 };
-
-export default App;
