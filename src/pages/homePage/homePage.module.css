@@ -1,0 +1,22 @@
+.homepage {
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px;
+    }
+
+.title {
+    color: gray;
+    font-size: 25px;
+    margin-bottom: 50px;
+    }
+
+.register_link {
+    font-size: 50px;
+    color: gray;
+    font-weight: bold;
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.46);
+}
