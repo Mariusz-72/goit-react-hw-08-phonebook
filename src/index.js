@@ -11,7 +11,7 @@ import './index.css';
 
 import { Provider } from 'react-redux';
 
-import { store, persistor } from './Redux/Store';
+import { store, persistor } from './Redux/store';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
