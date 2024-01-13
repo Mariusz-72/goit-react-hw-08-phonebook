@@ -5,14 +5,14 @@ const fields = {
         required: true,
         autoFocus: true,
         label: 'User name',
-        placeholder: 'Enter name',
+        placeholder: ' Enter name',
     },
     email: {
         type: 'email',
         name: 'email',
         required: true,
         label: 'User email',
-        placeholder: 'Enter email',
+        placeholder: ' Enter email',
     },
     password: {
         type: 'passwrod',
