@@ -22,6 +22,7 @@
     flex-direction: column;
     flex-wrap:wrap;
     align-content:center;
+    
     gap: 20px;
     margin: 0 auto;
     padding: 20px;
