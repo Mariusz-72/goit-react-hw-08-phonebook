@@ -8,7 +8,7 @@ import css from './MyContactForm.module.css';
 
 const MyContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const contacts = useSelector(getAllContacts);
 
@@ -23,20 +23,20 @@ const MyContactForm = ({ onSubmit }) => {
     return Boolean(result);
   };
 
-  const handleAddContact = ({ name, phone }) => {
+  const handleAddContact = ({ name, number }) => {
     if (isDublicate(name)) {
       return alert(`${name} is already in contacts`);
     }
 
-    dispatch(addContact({ name, phone }));
+    dispatch(addContact({ name, number }));
 
     setName('');
-    setPhone('');
+    setNumber('');
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit = handleAddContact({ name, phone });
+    onSubmit = handleAddContact({ name, number });
   };
 
   return (
@@ -58,13 +58,13 @@ const MyContactForm = ({ onSubmit }) => {
         <label>Number</label>
         <input
           className={css.input}
-          onChange={event => setPhone(event.target.value)}
+          onChange={event => setNumber(event.target.value)}
           type="tel"
-          name="phone"
+          name="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
-          value={phone}
+          value={number}
           placeholder="contact number"
         />
 

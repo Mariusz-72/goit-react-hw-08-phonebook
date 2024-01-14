@@ -71,10 +71,11 @@
 }
 
 .button {
-  background-color: rgb(250, 92, 92);
+  background-color: rgb(231, 87, 87);
   width: 100px;
   height: 20px;
   border-radius: 7px;
+  margin-top: 18px;
 }
 
 .contactList__item {

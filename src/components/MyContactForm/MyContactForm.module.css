@@ -21,6 +21,7 @@
     height: 30px;
     font-weight: 600;
     background-color: rgba(40, 170, 23, 0.822);
+    border-radius: 5px;
     color: rgb(7, 7, 7);
 }
 .phonebook_name {
