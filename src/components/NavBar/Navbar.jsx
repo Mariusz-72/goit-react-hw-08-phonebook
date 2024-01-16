@@ -11,12 +11,21 @@ import css from './navbar.module.css';
 const Navbar = () => {
     const isUserLogin = useSelector(isLogin);
     return (
-        <div className={css.navbar_wrap}>
+      <div className={css.navbar_wrap}>
         <NavLink to="/" className={css.navbar_title}>
-            Home
+          Home
         </NavLink>
-        {!isUserLogin ? <NavbarAuth /> : <NavbarUser />}
-        </div>
+        {isUserLogin ? (
+          <>
+            <NavLink to="/contacts" className={css.navbar_title}>
+              Contacts
+            </NavLink>
+            <NavbarUser />
+          </>
+        ) : (
+          <NavbarAuth />
+        )}
+      </div>
     );
 };
 
